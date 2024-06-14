@@ -1,0 +1,133 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Document</title>
+    <style>
+        /* CSS styles can be included within the <style> tag in the head section */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my website. This is the home section.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about us here.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact us for any queries.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+CSS
+/* Stylesheet for Sample HTML Document */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply font styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+}
+
+section h2 {
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+JS
+// JavaScript for Sample HTML Document
+
+// Function to display a message when the page loads
+function displayMessage() {
+    alert("Welcome to My Website!");
+}
+
+// Function to change the background color of the header
+function changeHeaderColor() {
+    var header = document.querySelector('header');
+    header.style.backgroundColor = '#ff6600';
+}
+
+// Function to toggle the visibility of a section
+function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section.style.display === 'none') {
+        section.style.display = 'block';
+    } else {
+        section.style.display = 'none';
+    }
+}
+
+// Add event listener to call displayMessage function when the page loads
+window.addEventListener('load', displayMessage);
+
+// Add event listener to call changeHeaderColor function when the header is clicked
+document.querySelector('header').addEventListener('click', changeHeaderColor);
